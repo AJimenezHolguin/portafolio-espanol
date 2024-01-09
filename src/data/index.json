@@ -1,0 +1,91 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "src": "./img/product-chain-1.png",
+      "title": "Front-End",
+      "description": "Se refiere a la parte visible de una aplicación web. Incluye diseño, interactividad y experiencia del usuario, desarrollado con HTML, CSS y JavaScript para brindar una interfaz atractiva y funcional."
+    },
+    {
+      "id": "2",
+      "src": "./img/next-js-icon.png",
+      "title": "Next js",
+      "description": "Es un marco de desarrollo web de React que simplifica la creación de aplicaciones rápidas y eficientes. Ofrece enrutamiento intuitivo, renderizado del lado del servidor, pre-renderización y fácil integración con API. Perfecto para construir aplicaciones modernas y escalables."
+    },
+    {
+      "id": "3",
+      "src": "./img/react.png",
+      "title": "React",
+      "description": "Es una biblioteca de JavaScript para construir interfaces de usuario interactivas y eficientes. Desarrollada por Facebook, simplifica la creación de componentes reutilizables, facilita la gestión del estado y permite actualizaciones eficientes del DOM para construir aplicaciones web rápidas y dinámicas."
+    },
+    {
+      "id": "4",
+      "src": "./img/javascript.png",
+      "title": "JavaScript",
+      "description": "Es un lenguaje de programación versátil y dinámico, utilizado principalmente en desarrollo web para crear interactividad y contenido dinámico en navegadores."
+    },
+    {
+      "id": "5",
+      "src": "./img/html.png",
+      "title": "HTML",
+      "description": "(Lenguaje de Marcado de Hipertexto) es la base del desarrollo web. Define la estructura de las páginas mediante etiquetas para contenido y enlaces."
+    },
+    {
+      "id": "6",
+      "src": "./img/css.png",
+      "title": "CSS",
+      "description": "(Hojas de Estilo en Cascada) es esencial en desarrollo web, permitiendo lograr diseños atractivos y consistentes con reglas de estilo."
+    },
+    {
+      "id": "7",
+      "src": "./img/git.png",
+      "title": "Git",
+      "description": "Es un sistema de control de versiones que rastrea cambios en el código fuente, facilitando la colaboración en proyectos y la gestión eficiente de revisiones."
+    },
+    {
+      "id": "8",
+      "src": "./img/github.png",
+      "title": "GitHub",
+      "description": "Es una plataforma colaborativa para desarrollo de software. Permite alojar, gestionar y colaborar en proyectos utilizando Git, facilitando la colaboración y el seguimiento de versiones."
+    },
+    {
+      "id": "9",
+      "src": "./img/firebase.png",
+      "title": "Firebase",
+      "description": "Es una plataforma de desarrollo de aplicaciones de Google. Ofrece servicios en la nube como base de datos, autenticación, almacenamiento y más, simplificando el desarrollo ágil y escalable de aplicaciones web y móviles."
+    },
+    {
+      "id": "10",
+      "src": "./img/typescript.png",
+      "title": "TypeScript",
+      "description": "Es un superset de JavaScript que agrega tipado estático. Mejora el desarrollo, detecta errores temprano y facilita el mantenimiento en proyectos grandes."
+    }
+    
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "src": "./img/swipe.png",
+      "title": "Swipe",
+      "description": "Desarrollo de un sitio web, enfocado a presentar nuestros servicios de una manera atractiva y funcional.",
+      "web": "https://ajimenezholguin.github.io/Swipe/",
+      "link": "ver en Github"
+    },
+    {
+      "id": "2",
+      "src": "./img/bookIt.png",
+      "title": "Hotels-JS",
+      "description": "Construcción de una plataforma de reservas online, facilitando las reservas de hoteles y la disponibilidad en tiempo real.",
+      "web": "https://ajimenezholguin.github.io/Hotels/",
+      "link": "Ver en Github"
+    },
+    {
+      "id": "3",
+      "src": "./img/BookitReact.png",
+      "title": "Hotels React js",
+      "description": "Construcción de una plataforma de reservas online, facilitando las reservas de hoteles y la disponibilidad en tiempo real.",
+      "web": "https://hotels-react-next.vercel.app/",
+      "link": "Ver en Github"
+    }
+  ]
+}
