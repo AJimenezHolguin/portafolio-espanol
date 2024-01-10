@@ -64,7 +64,7 @@
   ],
   "portfolio": [
     {
-      "id": "3",
+      "id": "1",
       "src": "./img/misgastos.png",
       "title": "Control gastos React-Firebase",
       "description": "Desarrollo de aplicación para gestionar tus finanzas de manera inteligente. Registra, analiza y controla tus gastos con esta app intuitiva. Domina tu dinero de forma eficiente.",
@@ -72,7 +72,7 @@
       "link": "Ver sitio"
     },
     {
-      "id": "3",
+      "id": "2",
       "src": "./img/peliculas.png",
       "title": "Peliculas - JavaScript",
       "description": " Desarrollo de aplicación para descubrir todo sobre películas. Comedia, acción, terror y más. Tu guía completa para explorar el mundo del cine en una aplicación fácil de usar.",
@@ -88,7 +88,7 @@
       "link": "Ver sitio"
     },
     {
-      "id": "3",
+      "id": "4",
       "src": "./img/viaje.png",
       "title": "Viaje por el Mundo - JavaScript",
       "description": "Desarrollo de Galeria de fotos donde pordrás navegar y recordar fácilmente tu mejores momentos.",
@@ -96,7 +96,7 @@
       "link": "Ver sitio"
     },
     {
-      "id": "3",
+      "id": "5",
       "src": "./img/presupuesto.png",
       "title": "Presupuesto - JavaScript",
       "description": "Desarrollo de App que te ayuda a controlar tus finanzas de forma Simple, intuitiva y personalizable. Para un manejo eficiente de tus gastos.",
@@ -104,7 +104,7 @@
       "link": "Ver sitio"
     },
     {
-      "id": "3",
+      "id": "6",
       "src": "./img/reloj.png",
       "title": "Reloj - JavaScript",
       "description": "Desarrollo de reloj digital combinado con estilos y funciones personalizados",
@@ -112,7 +112,7 @@
       "link": "Ver sitio"
     },
     {
-      "id": "1",
+      "id": "7",
       "src": "./img/swipe.png",
       "title": "Swipe",
       "description": "Desarrollo de un sitio web en HTML y CSS, enfocado a presentar nuestros servicios de una manera atractiva y funcional.",
@@ -120,7 +120,7 @@
       "link": "ver sitio"
     },
     {
-      "id": "2",
+      "id": "8",
       "src": "./img/bookIt.png",
       "title": "Hotels-JS",
       "description": "Construcción de una plataforma de reservas online, facilitando las reservas de hoteles y la disponibilidad en tiempo real.",
@@ -128,7 +128,7 @@
       "link": "Ver sitio"
     },
     {
-      "id": "3",
+      "id": "9",
       "src": "./img/BookitReact.png",
       "title": "Hotels Next js",
       "description": "Construcción de una plataforma de reservas online, facilitando las reservas de hoteles y la disponibilidad en tiempo real.",
