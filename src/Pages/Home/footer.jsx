@@ -69,19 +69,6 @@ const Footer = () => {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="testimonial"
-                className="text-md"
-              >
-                Testimonios
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
                 to="Contact"
                 className="text-md"
               >
@@ -95,7 +82,7 @@ const Footer = () => {
        
             <li>
               <a
-                href="https://www.linkedin.com/in/andersonjimenezholguin"
+                href="https://www.linkedin.com/in/andersonjimenezholguin/"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"

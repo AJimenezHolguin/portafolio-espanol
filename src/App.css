@@ -334,10 +334,11 @@ h1,h2,h3,h4,h5,h6,p{
     gap: 21.3px;
 }
 .portfolio--section--container{
-    display: flex;
-    align-items: center;
+    display: grid;
     justify-content: center;
+    align-items: flex-start;
     gap: 42.6px;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
 
 }
