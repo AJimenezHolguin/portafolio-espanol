@@ -2,69 +2,63 @@
   "skills": [
     {
       "id": "1",
-      "src": "./img/product-chain-1.png",
-      "title": "Front-End",
-      "description": "Se refiere a la parte visible de una aplicación web. Incluye diseño, interactividad y experiencia del usuario, desarrollado con HTML, CSS y JavaScript para brindar una interfaz atractiva y funcional."
+      "src": "./img/angular.png",
+      "title": "Angular"
     },
     {
       "id": "2",
-      "src": "./img/next-js-icon.png",
-      "title": "Next js",
-      "description": "Es un marco de desarrollo web de React que simplifica la creación de aplicaciones rápidas y eficientes. Ofrece enrutamiento intuitivo, renderizado del lado del servidor, pre-renderización y fácil integración con API. Perfecto para construir aplicaciones modernas y escalables."
+      "src": "./img/typescript.png",
+      "title": "TypeScript"
     },
     {
       "id": "3",
-      "src": "./img/react.png",
-      "title": "React",
-      "description": "Es una biblioteca de JavaScript para construir interfaces de usuario interactivas y eficientes. Desarrollada por Facebook, simplifica la creación de componentes reutilizables, facilita la gestión del estado y permite actualizaciones eficientes del DOM para construir aplicaciones web rápidas y dinámicas."
+      "src": "./img/next-js-icon.png",
+      "title": "Next js"
     },
     {
       "id": "4",
-      "src": "./img/javascript.png",
-      "title": "JavaScript",
-      "description": "Es un lenguaje de programación versátil y dinámico, utilizado principalmente en desarrollo web para crear interactividad y contenido dinámico en navegadores."
+      "src": "./img/react.png",
+      "title": "React"
     },
+
     {
       "id": "5",
       "src": "./img/html.png",
-      "title": "HTML",
-      "description": "(Lenguaje de Marcado de Hipertexto) es la base del desarrollo web. Define la estructura de las páginas mediante etiquetas para contenido y enlaces."
+      "title": "HTML"
     },
     {
       "id": "6",
       "src": "./img/css.png",
-      "title": "CSS",
-      "description": "(Hojas de Estilo en Cascada) es esencial en desarrollo web, permitiendo lograr diseños atractivos y consistentes con reglas de estilo."
+      "title": "CSS" 
     },
     {
       "id": "7",
       "src": "./img/git.png",
-      "title": "Git",
-      "description": "Es un sistema de control de versiones que rastrea cambios en el código fuente, facilitando la colaboración en proyectos y la gestión eficiente de revisiones."
+      "title": "Git"
     },
     {
       "id": "8",
       "src": "./img/github.png",
-      "title": "GitHub",
-      "description": "Es una plataforma colaborativa para desarrollo de software. Permite alojar, gestionar y colaborar en proyectos utilizando Git, facilitando la colaboración y el seguimiento de versiones."
+      "title": "GitHub"
     },
     {
       "id": "9",
       "src": "./img/firebase.png",
-      "title": "Firebase",
-      "description": "Es una plataforma de desarrollo de aplicaciones de Google. Ofrece servicios en la nube como base de datos, autenticación, almacenamiento y más, simplificando el desarrollo ágil y escalable de aplicaciones web y móviles."
-    },
-    {
-      "id": "10",
-      "src": "./img/typescript.png",
-      "title": "TypeScript",
-      "description": "Es un superset de JavaScript que agrega tipado estático. Mejora el desarrollo, detecta errores temprano y facilita el mantenimiento en proyectos grandes."
+      "title": "Firebase"
     }
     
   ],
   "portfolio": [
     {
       "id": "1",
+      "src": "./img/ventaProductos4life.png",
+      "title": "Venta de productos con dashboard administrativo",
+      "description": "Desarrollo de aplicación con diseño intuitivo para mostrar y comercializar productos, incluye diseño responsive y dashboard administrativo para personalizar producto.",
+      "web": "https://www.4lifevidaysalud.com/",
+      "link": "Ver sitio"
+    },
+    {
+      "id": "2",
       "src": "./img/misgastos.png",
       "title": "Control gastos React-Firebase",
       "description": "Desarrollo de aplicación para gestionar tus finanzas de manera inteligente. Registra, analiza y controla tus gastos con esta app intuitiva. Domina tu dinero de forma eficiente.",
@@ -72,67 +66,11 @@
       "link": "Ver sitio"
     },
     {
-      "id": "2",
+      "id": "3",
       "src": "./img/peliculas.png",
       "title": "Peliculas - JavaScript",
       "description": " Desarrollo de aplicación para descubrir todo sobre películas. Comedia, acción, terror y más. Tu guía completa para explorar el mundo del cine en una aplicación fácil de usar.",
       "web": "https://ajimenezholguin.github.io/Peliculas-desktop/",
-      "link": "Ver sitio"
-    },
-    {
-      "id": "3",
-      "src": "./img/tienda.png",
-      "title": "Tienda Online - JavaScript",
-      "description": "Desarrollo de aplicación tienda online amigable. Explora, elige, compra. Simple y rápido",
-      "web": "https://ajimenezholguin.github.io/tienda-online/",
-      "link": "Ver sitio"
-    },
-    {
-      "id": "4",
-      "src": "./img/viaje.png",
-      "title": "Viaje por el Mundo - JavaScript",
-      "description": "Desarrollo de Galeria de fotos donde pordrás navegar y recordar fácilmente tu mejores momentos.",
-      "web": "https://ajimenezholguin.github.io/Viaje-por-el-mundo/",
-      "link": "Ver sitio"
-    },
-    {
-      "id": "5",
-      "src": "./img/presupuesto.png",
-      "title": "Presupuesto - JavaScript",
-      "description": "Desarrollo de App que te ayuda a controlar tus finanzas de forma Simple, intuitiva y personalizable. Para un manejo eficiente de tus gastos.",
-      "web": "https://ajimenezholguin.github.io/APP-PRESUPUESTO/",
-      "link": "Ver sitio"
-    },
-    {
-      "id": "6",
-      "src": "./img/reloj.png",
-      "title": "Reloj - JavaScript",
-      "description": "Desarrollo de reloj digital combinado con estilos y funciones personalizados",
-      "web": "https://ajimenezholguin.github.io/Reloj-Digital/",
-      "link": "Ver sitio"
-    },
-    {
-      "id": "7",
-      "src": "./img/swipe.png",
-      "title": "Swipe",
-      "description": "Desarrollo de un sitio web en HTML y CSS, enfocado a presentar nuestros servicios de una manera atractiva y funcional.",
-      "web": "https://ajimenezholguin.github.io/Swipe/",
-      "link": "ver sitio"
-    },
-    {
-      "id": "8",
-      "src": "./img/bookIt.png",
-      "title": "Hotels-JS",
-      "description": "Construcción de una plataforma de reservas online, facilitando las reservas de hoteles y la disponibilidad en tiempo real.",
-      "web": "https://ajimenezholguin.github.io/Hotels/",
-      "link": "Ver sitio"
-    },
-    {
-      "id": "9",
-      "src": "./img/BookitReact.png",
-      "title": "Hotels Next js",
-      "description": "Construcción de una plataforma de reservas online, facilitando las reservas de hoteles y la disponibilidad en tiempo real.",
-      "web": "https://hotels-react-next.vercel.app/",
       "link": "Ver sitio"
     }
   ]

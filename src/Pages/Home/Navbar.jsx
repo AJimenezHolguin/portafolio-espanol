@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div>
-        <img src="./img/logoNuevo.png" alt="Developer" />
+       
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
@@ -52,7 +52,7 @@ const Navbar = () => {
               activeClass="navbar--active-content"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={100}
               duration={500}
               to="heroSection"
               className="navbar--content"
@@ -66,7 +66,7 @@ const Navbar = () => {
               activeClass="navbar--active-content"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={100}
               duration={500}
               to="AboutMe"
               className="navbar--content"
@@ -80,7 +80,7 @@ const Navbar = () => {
               activeClass="navbar--active-content"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={100}
               duration={500}
               to="mySkills"
               className="navbar--content"
@@ -94,7 +94,7 @@ const Navbar = () => {
               activeClass="navbar--active-content"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={100}
               duration={500}
               to="MyPortfolio"
               className="navbar--content"
@@ -102,23 +102,22 @@ const Navbar = () => {
               Portafolio
             </Link>
           </li>
-         
-      <Link
-        onClick={closeMenu}
-        activeClass="navbar--active-content"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        to="Contact"
-        className="btn btn-outline-primary"
+        <Link
+          onClick={closeMenu}
+          activeClass="navbar--active-content"
+          spy={true}
+          smooth={true}
+          offset={100}
+          duration={500}
+          to="Contact"
+          className="btn btn-outline-primary"
         >
-        Contáctame
-      </Link>
-          </ul>
-        </div>
+          Contáctame
+        </Link>
+        </ul>
+      </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

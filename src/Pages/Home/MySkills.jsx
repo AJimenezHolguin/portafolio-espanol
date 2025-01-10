@@ -5,8 +5,8 @@ const MySkills = () => {
         <section className="skills--section"
         id="mySkills">
            <div className="portfolio--container">
-            <p className="section--title">Mis Habilidades</p>
             <h2 className="skills--section--heading">Competencias</h2>
+            <p className="section--title">Mis Habilidades:</p>
            </div>
            <div className="skills--section--container">
             {data?.skills?.map((item, index) =>(
@@ -18,8 +18,6 @@ const MySkills = () => {
                     <div className="skills--section--card--content">
                        <h3 className="skills--section--title">
                         {item.title}</h3>
-                        <p className="skills--section--description">
-                        {item.description}</p> 
                     </div>
 
                 </div>

@@ -1,6 +1,11 @@
+import CoverParticles from "./CoverParticles";
+
 const HeroSection = () => {
     return (
       <section id="heroSection" className="hero--section">
+        <div className="hero--section--particles">
+        <CoverParticles />
+        </div>
         <div className="hero--section--content--box">
           <div className="hero--section--content">
             <p className="section--title">Hola, Soy Anderson</p>
@@ -17,11 +22,11 @@ const HeroSection = () => {
                     crecer y evolucionar en este maravilloso mundo de la tecnología y el desarrollo.
                     </p>  
             </div> 
-            {/* <button className="btn btn-primary">Get In Touch</button>  */}
+          
         </div>
-        <div className="hero--section--img">
+        {/* <div className="hero--section--img">
             <img src="./img/sinfondoFoto.png" alt="Hero section"/>
-        </div>
+        </div> */}
       </section>  
     )
 }
