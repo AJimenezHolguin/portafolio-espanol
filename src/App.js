@@ -1,14 +1,14 @@
 import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, BrowserRouter} from "react-router-dom";
 import Navbar from "./Pages/Home/Navbar";
 import Home from "./Pages/Home/Homescreen";
 
 
 const App = () => {
   return (
-    <div className="App">
-      <Router>
+    <BrowserRouter future={{v7_startTransition: true, v7_relativeSplatPath: true}}>
+      <div className="App">
         <div>
           <Navbar/>
           <Routes>
@@ -17,8 +17,8 @@ const App = () => {
               404 Not Found</div>}></Route>
           </Routes>
         </div>
-      </Router>
     </div>
+    </BrowserRouter>
   );
 }
 

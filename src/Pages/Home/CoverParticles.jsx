@@ -29,7 +29,8 @@ const CoverParticles = () => {
         .trim();
 
     return (
-        init && <Particles
+        init &&
+         <Particles
             id="tsparticles"
             options={{
                 fullScreen: {
@@ -105,6 +106,7 @@ const CoverParticles = () => {
                 detectRetina: true,
             }}
         />
+    
     )
     
 }

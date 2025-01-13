@@ -1,21 +1,65 @@
-const ContactMe = () => {
-    return (
-        <section id="Contact" className="contact--section">
-            <div>
-                <p className="sub--title">Ponerse en Contacto</p>
-                <h2><a href="http://w.app/8PjCDq" 
-                       target="_blank" 
-                       rel="noopener noreferrer">Contáctame
-                       <img src="./img/wsp2.png" alt="WhatsApp" />
-                    </a>
-                </h2>
-                <p className="text-lg">
-                Transformando ideas en experiencias. ¡Escribeme para llevar tu proyecto al siguiente nivel!
-                </p>
-            </div>
-           
-        </section>
-    )
-}
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
-export default ContactMe;
+export const ContactMe = () => {
+  const refForm = useRef();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const serviceId = "service_1zydh7h";
+    const templateId = "template_rda7mmc";
+
+    const apiKey = "bRO9ukLUmI5-eYBiE";
+
+    emailjs
+      .sendForm(serviceId, templateId, refForm.current, apiKey)
+      .then((result) => console.log(result.text))
+      .catch((error) => console.error(error));
+  };
+
+  return (
+    <section id="Contact" className="contact--section">
+      <form ref={refForm} action="" onSubmit={handleSubmit}>
+        <div className="header-contact">
+          <h2>Contactame</h2>
+          <p>Por favor complete este formulario</p>
+        </div>
+        <fieldset className="field-name">
+          <label className="symbol-required name" htmlFor="Nombre">
+            Nombre{" "}
+          </label>
+          <input
+            name="name"
+            type="text"
+            placeholder="Ej: Anderson Jimenez"
+            required
+          />
+        </fieldset>
+        <fieldset className="field-email">
+          <label className="symbol-required" name="email">
+            Email{" "}
+          </label>
+          <input
+            name="email"
+            type="email"
+            id="email"
+            placeholder="Ej: anjimhol23@gmail.com"
+            required
+          />
+        </fieldset>
+        <fieldset className="field-message">
+          <label className="symbol-required">Mensaje </label>
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            maxLength="500"
+            placeholder="Escribe tu mensaje"
+          ></textarea>
+        </fieldset>
+        <button className="btn btn-outline-primary">Enviar</button>
+      </form>
+    </section>
+  );
+};
