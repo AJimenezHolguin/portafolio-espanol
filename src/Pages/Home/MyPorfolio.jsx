@@ -8,13 +8,7 @@ const MyPorfolio = () => {
           <h2 className="section--heading">Mi Portafolio</h2>
           <p className="sub--title">Proyectos Recientes:</p>
         </div>
-        <div className="btn--decoretion">
-            <a href="https://github.com/AJimenezHolguin" target="_blank" rel="noopener noreferrer">
-          <button className="btn btn-outline-primary">
-            Visita mi GitHub
-          </button>
-          </a>
-        </div>
+   
       </div>
       <div className="portfolio--section--container">
         {data?.portfolio?.map((item, index) => (

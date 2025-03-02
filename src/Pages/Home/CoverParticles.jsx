@@ -30,16 +30,19 @@ const CoverParticles = () => {
 
     return (
         init &&
-         <Particles
+         <Particles  className="tsParticles"  
             id="tsparticles"
             options={{
+                
                 fullScreen: {
                    enable: false,  
+                   
                       
                 },
                 background: {
                     color: {
-                        value: bgShadeColor,    
+                        value: bgShadeColor, 
+                           
                     },       
                 },
                 fpsLimit: 120,
@@ -67,6 +70,7 @@ const CoverParticles = () => {
                 },
                 particles: {
                     color: {
+                       
                         value: "#000",
                     },
                     links: {
@@ -75,6 +79,8 @@ const CoverParticles = () => {
                         enable: true,
                         opacity: 0.5,
                         width: 1,
+                        
+                       
                     },
                     move: {
                         direction: "none",
@@ -100,13 +106,13 @@ const CoverParticles = () => {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 5 },
+                        value: { min: 10, max: 6 },
                     },
                 },
                 detectRetina: true,
             }}
         />
-    
+           
     )
     
 }

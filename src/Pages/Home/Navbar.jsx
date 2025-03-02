@@ -33,9 +33,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
-      <div>
-       
-      </div>
+      <div></div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
         onClick={toggleNav}
@@ -52,7 +50,7 @@ const Navbar = () => {
               activeClass="navbar--active-content"
               spy={true}
               smooth={true}
-              offset={100}
+              // offset={-5}
               duration={500}
               to="heroSection"
               className="navbar--content"
@@ -60,27 +58,14 @@ const Navbar = () => {
               Inicio
             </Link>
           </li>
+          <li></li>
           <li>
             <Link
               onClick={closeMenu}
               activeClass="navbar--active-content"
               spy={true}
               smooth={true}
-              offset={100}
-              duration={500}
-              to="AboutMe"
-              className="navbar--content"
-            >
-              Acerca de Mi
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={100}
+              // offset={-5}
               duration={500}
               to="mySkills"
               className="navbar--content"
@@ -94,7 +79,7 @@ const Navbar = () => {
               activeClass="navbar--active-content"
               spy={true}
               smooth={true}
-              offset={100}
+              offset={5}
               duration={500}
               to="MyPortfolio"
               className="navbar--content"
@@ -102,18 +87,18 @@ const Navbar = () => {
               Portafolio
             </Link>
           </li>
-        <Link
-          onClick={closeMenu}
-          activeClass="navbar--active-content"
-          spy={true}
-          smooth={true}
-          offset={100}
-          duration={500}
-          to="Contact"
-          className="btn btn-outline-primary"
-        >
-          Contáctame
-        </Link>
+          <Link
+            onClick={closeMenu}
+            activeClass="navbar--active-content"
+            spy={true}
+            smooth={true}
+            offset={10}
+            duration={500}
+            to="Contact"
+            className="btn btn-outline-primary"
+          >
+            Contáctame
+          </Link>
         </ul>
       </div>
     </nav>

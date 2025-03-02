@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Swal from 'sweetalert2'
 
 export const ContactMe = () => {
   const refForm = useRef();
@@ -14,15 +15,33 @@ export const ContactMe = () => {
 
     emailjs
       .sendForm(serviceId, templateId, refForm.current, apiKey)
-      .then((result) => console.log(result.text))
-      .catch((error) => console.error(error));
+      .then((result) => {
+        console.log(result.text)
+      
+      Swal.fire({
+        title: "Mensaje enviado!",
+        icon: "success",
+        draggable: true
+      })
+      refForm.current.reset()
+    })
+    .catch((error) => {
+      console.error(error)
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Hubo un problema al enviar el mensaje. Inténtalo nuevamente", 
+      });
+    }) 
+    
   };
+
 
   return (
     <section id="Contact" className="contact--section">
       <form ref={refForm} action="" onSubmit={handleSubmit}>
         <div className="header-contact">
-          <h2>Contactame</h2>
+          <h2>Contáctame</h2>
           <p>Por favor complete este formulario</p>
         </div>
         <fieldset className="field-name">
@@ -58,7 +77,9 @@ export const ContactMe = () => {
             placeholder="Escribe tu mensaje"
           ></textarea>
         </fieldset>
-        <button className="btn btn-outline-primary">Enviar</button>
+        <button className="btn btn-outline-primary" 
+        >Enviar
+        </button>
       </form>
     </section>
   );

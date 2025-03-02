@@ -1,100 +1,31 @@
 import { Link } from "react-scroll";
 import React from "react";
 
+
 const Footer = () => {
   return (
     <footer className="footer--container">
-      <div className="footer--link--container">
-        <div>{/* <img src="./img/logoNuevo.png" alt="Developer" /> */}</div>
-        <div className="footer--items">
-          <ul>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="heroSection"
-                className="text-md"
-              >
-                Inicio
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="AboutMe"
-                className="text-md"
-              >
-                Acerca de Mi
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="mySkills"
-                className="text-md"
-              >
-                Compentencias
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="MyPortfolio"
-                className="text-md"
-              >
-                Portafolio
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Contact"
-                className="text-md"
-              >
-                Contáctame
-              </Link>
-            </li>
-          </ul>
-        </div>
+      <hr className="divider" />
+      <div className="footer--content--container">
+        <p className="footer--content">Hecho con cariño 💜 por Anderson Jiménez</p>
         <div className="footer--social--icon">
-          <ul>
+        <ul>
             <li>
               <a
                 href="https://wa.me/573166173440?text=Hola,%20quiero%20hablar%20contigo."
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
+                title="WhatsApp"
               >
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
+                  width="52"
+                  height="52"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  color="green"
                 >
-                  <path
-                    d="M16 1.33333C8.63636 1.33333 2.66667 7.30303 2.66667 14.6667C2.66667 17.8746 3.88788 20.7939 5.93939 23.0303L4 30L10.803 28.1212C13.0167 29.5439 14.8131 30.6667 16 30.6667C23.3636 30.6667 29.3333 24.697 29.3333 17.3333C29.3333 9.9697 23.3636 1.33333 16 1.33333ZM16 26.6667C15.0341 26.6667 13.5742 26.1212 11.803 25.0303L11.3333 24.7273L7.45455 25.8182L8.54545 21.9394L8.24242 21.4697C6.48485 19.2879 5.33333 16.8939 5.33333 14.6667C5.33333 8.78788 10.1212 4 16 4C21.8788 4 26.6667 8.78788 26.6667 14.6667C26.6667 20.5455 21.8788 26.6667 16 26.6667ZM20.303 19.4242C20.0606 19.2121 18.9394 18.6061 18.6969 18.5455C18.4545 18.4848 18.2424 18.4848 18.0606 18.7273C17.8788 18.9697 17.3333 19.5758 17.1515 19.7576C16.9697 19.9394 16.7879 19.9697 16.5455 19.8182C16.303 19.6667 15.5152 19.4242 14.4242 18.4242C13.6364 17.6667 13.2121 16.9697 13.0303 16.7273C12.8485 16.4848 12.9394 16.303 13.0909 16.1515C13.2424 16 13.3939 15.7576 13.5152 15.5758C13.6364 15.3939 13.6969 15.2424 13.8182 15.0606C13.9394 14.8788 13.9394 14.7576 13.8788 14.6061C13.8182 14.4545 13.3333 13.1515 13.0909 12.5455C12.8485 11.9394 12.6061 12 12.4242 12H12.1818C12 12 11.7576 12 11.5152 12.2424C11.2727 12.4848 10.7273 13.0303 10.5455 14.2424C10.3636 15.4545 10.7273 16.4242 11.0606 16.9697C11.3939 17.5152 12.4242 18.9697 14.1818 20.1212C15.9394 21.2727 17.5758 21.7576 18.1212 21.8788C18.6667 22 19.7576 21.8788 20.303 21.5758C20.8485 21.2727 21.3333 20.9697 21.4545 20.7273C21.5758 20.4848 21.5758 20.2424 21.5152 20.1212C21.4545 20 20.5455 19.6364 20.303 19.4242Z"
-                    fill="#25D366"
-                  />
+                  <path d="M12.001 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.005 22l1.352-4.968A9.953 9.953 0 0 1 2.001 12c0-5.523 4.477-10 10-10zM8.593 7.3l-.2.008a.961.961 0 0 0-.372.1 1.293 1.293 0 0 0-.294.228c-.12.113-.188.211-.261.306A2.73 2.73 0 0 0 6.9 9.62c.002.49.13.967.33 1.413.409.902 1.082 1.857 1.97 2.742.214.213.424.427.65.626a9.448 9.448 0 0 0 3.84 2.046l.568.087c.185.01.37-.004.556-.013a1.99 1.99 0 0 0 .833-.231 4.83 4.83 0 0 0 .383-.22s.043-.028.125-.09c.135-.1.218-.171.33-.288.083-.086.155-.187.21-.302.078-.163.156-.474.188-.733.024-.198.017-.306.014-.373-.004-.107-.093-.218-.19-.265l-.582-.261s-.87-.379-1.402-.621a.497.497 0 0 0-.176-.041.482.482 0 0 0-.378.127c-.005-.002-.072.055-.795.931a.35.35 0 0 1-.368.13 1.43 1.43 0 0 1-.191-.066c-.124-.052-.167-.072-.252-.108a6.025 6.025 0 0 1-1.575-1.003c-.126-.11-.243-.23-.363-.346a6.297 6.297 0 0 1-1.02-1.268l-.059-.095a.923.923 0 0 1-.102-.205c-.038-.147.061-.265.061-.265s.243-.266.356-.41c.11-.14.203-.276.263-.373.118-.19.155-.385.093-.536-.28-.684-.57-1.365-.868-2.041-.059-.134-.234-.23-.393-.249-.054-.006-.108-.012-.162-.016a3.385 3.385 0 0 0-.403.004l.201-.008z" />
                 </svg>
               </a>
             </li>
@@ -105,11 +36,12 @@ const Footer = () => {
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
+                title="LinkedIn"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
+                  width="52"
+                  height="52"
                   viewBox="0 0 33 33"
                   fill="none"
                 >
@@ -122,55 +54,32 @@ const Footer = () => {
                 </svg>
               </a>
             </li>
+            <li>
+  <a
+    href="https://github.com/AJimenezHolguin"
+    className="navbar--content"
+    target="_blank"
+    rel="noreferrer"
+    title="GitHub"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="52"
+      height="52"
+      viewBox="0 0 33 33"
+      fill="none"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M16.5 3C9.04416 3 3 9.04416 3 16.5C3 22.8048 7.43824 28.1788 13.2866 29.7664C13.9892 29.8948 14.25 29.4776 14.25 29.1252V26.9189C10.5 27.6942 9.75 25.2935 9.75 25.2935C9.108 23.5836 8.136 23.184 8.136 23.184C6.75 22.3146 8.25 22.3358 8.25 22.3358C9.786 22.4372 10.5 23.985 10.5 23.985C11.886 26.484 14.385 25.7583 15.375 25.2935C15.4956 24.3262 15.8646 23.634 16.278 23.2652C12.75 22.8964 9 21.528 9 16.083C9 14.5056 9.546 13.197 10.428 12.207C10.2936 11.835 9.8406 10.4796 10.572 8.745C10.572 8.745 11.769 8.3616 14.25 10.206C15.3816 9.897 16.6206 9.897 17.7516 10.206C20.2326 8.3616 21.4296 8.745 21.4296 8.745C22.161 10.4796 21.708 11.835 21.5736 12.207C22.4556 13.197 23.0016 14.5056 23.0016 16.083C23.0016 21.5406 19.2516 22.884 15.7236 23.2524C16.2186 23.6844 16.6716 24.5742 16.6716 25.9182V29.1252C16.6716 29.4776 16.9324 29.8948 17.635 29.7664C23.4834 28.1788 27.9216 22.8048 27.9216 16.5C27.9216 9.04416 21.8774 3 16.5 3Z"
+        fill="black"
+      />
+    </svg>
+  </a>
+</li>
           </ul>
-        </div>
-      </div>
-      <hr className="divider" />
-      <div className="footer--content--container">
-        <p className="footer--content">Hecho con 💖 por Anderson</p>
-        <div className="footer--social--icon">
-          <ul>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Privacy_Policy"
-                className="text-sm"
-              >
-                Politica de privacidad
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Terms_of_Service"
-                className="text-sm"
-              >
-                Términos de servicio
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Cookies_Settings"
-                className="text-sm"
-              >
-                Configuración de cookies
-              </Link>
-            </li>
-          </ul>
-        </div>
+          </div>
       </div>
     </footer>
   );

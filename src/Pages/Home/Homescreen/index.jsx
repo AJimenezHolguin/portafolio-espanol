@@ -10,7 +10,7 @@ const Home =() => {
   return (
     <>
       <HeroSection />
-      <AboutMe />
+      {/* <AboutMe /> */}
       <MySkills />
       <MyPorfolio />
       <ContactMe />

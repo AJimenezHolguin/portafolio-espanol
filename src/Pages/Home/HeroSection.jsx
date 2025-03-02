@@ -1,3 +1,4 @@
+import AboutMe from "./AboutMe";
 import CoverParticles from "./CoverParticles";
 
 const HeroSection = () => {
@@ -6,8 +7,11 @@ const HeroSection = () => {
         <div className="hero--section--particles">
         <CoverParticles />
         </div>
-        <div className="hero--section--content--box">
-          <div className="hero--section--content">
+        <div className="about--section--img">
+        <img src="./img/sinfondoFoto.png" alt="About Me" />
+      </div>
+        <AboutMe />
+          {/* <div className="hero--section--content">
             <p className="section--title">Hola, Soy Anderson</p>
              <h1 className="hero--section--title">
                 <span className="hero--section--title--color">Front-end</span>
@@ -21,12 +25,7 @@ const HeroSection = () => {
                     <br/>
                     crecer y evolucionar en este maravilloso mundo de la tecnología y el desarrollo.
                     </p>  
-            </div> 
-          
-        </div>
-        {/* <div className="hero--section--img">
-            <img src="./img/sinfondoFoto.png" alt="Hero section"/>
-        </div> */}
+            </div>  */}
       </section>  
     )
 }
