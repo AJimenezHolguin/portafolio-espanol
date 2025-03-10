@@ -50,7 +50,7 @@ const Navbar = () => {
               activeClass="navbar--active-content"
               spy={true}
               smooth={true}
-              // offset={-5}
+              offset={-10}
               duration={500}
               to="heroSection"
               className="navbar--content"
@@ -65,7 +65,7 @@ const Navbar = () => {
               activeClass="navbar--active-content"
               spy={true}
               smooth={true}
-              // offset={-5}
+              offset={10}
               duration={500}
               to="mySkills"
               className="navbar--content"
@@ -79,7 +79,7 @@ const Navbar = () => {
               activeClass="navbar--active-content"
               spy={true}
               smooth={true}
-              offset={5}
+              offset={10}
               duration={500}
               to="MyPortfolio"
               className="navbar--content"
