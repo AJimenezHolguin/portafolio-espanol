@@ -202,7 +202,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .tsParticles {
-  height: 600px;
+  height: 630px;
 }
 
 .hero--section--content{
@@ -709,6 +709,9 @@ form {
       display: flex;
       flex-direction: column;
     }
+    .tsParticles {
+      height: 670px;
+    }
 
     .skills--section--container {
       display: grid;
@@ -777,6 +780,9 @@ form {
      display: flex;
      justify-content: center;
     }
+    .tsParticles {
+      height: 920px;
+    }
   }
 
   @media only screen and (max-width: 600px) {
@@ -816,6 +822,10 @@ form {
     display: grid;
     grid-template-columns: repeat(2,2fr);
   } 
+
+  .tsParticles {
+    height: 850px;
+  }
 
   }
 
