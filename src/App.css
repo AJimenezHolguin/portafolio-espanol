@@ -566,65 +566,132 @@ form {
     font-weight: 400;
     line-height: 28px;
   }
-  
-  /* Responsive Screens */
-  @media only screen and (max-width: 1800px) {
-    .hero--section--title {
+
+  /* Responsive Styles */
+@media only screen and (max-width: 1800px) {
+  .hero--section--title {
       font-size: 68px;
       line-height: 70px;
-    }
-    .skills--section--title {
-      font-size: 28px;
-      line-height: 40px;
-    }
-    .skills--section--container {
-      display: grid;
-      justify-content: center;
-      align-items: flex-start;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 16px;
-      width: 100%;
-    }
   }
-  
-  @media only screen and (max-width: 1600px) {
-    .skills--section--heading {
+  .skills--section--container {
+      grid-template-columns: repeat(4, 1fr);
+  }
+  .hero--section--title {
+    font-size: 68px;
+    line-height: 70px;
+  }
+  .skills--section--title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .skills--section--container {
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .skills--section--heading {
       font-size: 54px;
       line-height: 70px;
-    }
-    .skills--section--container {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 16px;
-      width: 100%;
-    }
-    .skills--section--card {
-      gap: 28px;
-    }
-    .skills--section--card--content {
-      gap: 20px;
-    }
-    .skills--section--title {
-      font-size: 23px;
-      line-height: 30px;
-    }
-    .skills--section--description {
-      font-size: 17.333px;
-      line-height: 27px;
-    }
   }
-  
-  @media only screen and (max-width: 1023px) {
-    /* .btn-outline-primary {
-      display: none;
-    } */
-    .hero--section {
+  .skills--section--container {
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .skills--section--heading {
+    font-size: 54px;
+    line-height: 70px;
+  }
+  .skills--section--container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    width: 100%;
+  }
+  .skills--section--card {
+    gap: 28px;
+  }
+  .skills--section--card--content {
+    gap: 20px;
+  }
+  .skills--section--title {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .skills--section--description {
+    font-size: 17.333px;
+    line-height: 27px;
+  }
+}
+
+  @media screen and (max-width: 1023px) {
+
+
+    .nav__hamburger {
       display: flex;
-      flex-direction: column-reverse;
+      width: 1.875rem;
+      height: 1.313rem;
+      flex-direction: column;
+      justify-content: space-around;
+      position: absolute;
+      top: 25px;
+      right: 25px;
+    }
+
+    .navbar--items {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255);
+      top: -20rem;
+      left: 0;
+      width: 100%;
+      transition: all ease-in-out 0.4s;
+      z-index: -1000;
+    }
+    
+    .nav__hamburger__line {
+      display: block;
+      height: 0.188rem;
+      width: 100%;
+      background-color: #000000;
+      border-radius: 0.625rem;
+      transition: all ease-in-out 0.2s;
+    }
+
+    .navbar--items ul {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 3rem 0 0.6rem;
+      z-index: -100;
+    }
+
+    .navbar--items.active {
+      top: 30px;
+    }
+
+    .nav__hamburger.active :nth-child(1) {
+      transform: rotate(45deg) translate(0.45rem, 0.1875rem);
+    }
+
+    .nav__hamburger.active :nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav__hamburger.active :nth-child(3) {
+      transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
+    }
+     
+    .hero--section {
       padding-bottom: 70px;
-      height: 190px;
     }
 
     .hero--section--title,
@@ -632,7 +699,7 @@ form {
     .footer--content {
       text-align: center;
     }
-    .skills--section--container,
+  
     .about--section,
     .portfolio--section--container,
     .portfolio--container-box,
@@ -642,6 +709,12 @@ form {
       display: flex;
       flex-direction: column;
     }
+
+    .skills--section--container {
+      display: grid;
+      grid-template-columns: repeat(4,2fr);
+    } 
+
     .skills--section,
     .portfolio--container,
     .hero--section--content,
@@ -657,8 +730,6 @@ form {
     .contact--section,
     .footer--container {
       gap: 20px;
-      padding-top: 70px;
-      padding-bottom: 70px;
     }
     .about--section {
       gap: 20px;
@@ -695,14 +766,38 @@ form {
     }
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 850px){
     .hero--section {
-        display: flex
-;
-        flex-direction: column-reverse;
-        padding-bottom: 70px;
-        height: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
     }
+    .about--section--img {
+     display: flex;
+     justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .about--section--img > img{
+      padding: 0px;
+      width: 170px;
+      height: 170px;
+    }
+
+    .hero--section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+    }
+    .about--section--img {
+     display: flex;
+     justify-content: center;
+    }
+    
     .contact--section {
       display: flex;
       padding: 40px 0px;
@@ -717,16 +812,54 @@ form {
     width: 80%;
   }
 
+  .skills--section--container {
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+  } 
+
   }
 
-  @media only screen and (max-width: 400px){
+  @media only screen and (max-width: 370px){
+
+    .nav__hamburger {
+      display: none;
+      width: 1.875rem;
+      height: 1.313rem;
+      flex-direction: column;
+      justify-content: space-around;
+      position: absolute;
+      top: 25px;
+      right: 25px;
+    }
+    
+    .nav__hamburger__line {
+      display: block;
+      height: 0.188rem;
+      width: 100%;
+      background-color: #000000;
+      border-radius: 0.625rem;
+      transition: all ease-in-out 0.2s;
+    }
+    .navbar--items ul {
+      display:flex;
+      align-items: center;
+      margin: 0px 42.667px;
+    }
    
-      .hero--section {
-          display: flex;
-          flex-direction: column-reverse;
-          padding-bottom: 70px;
-          height: 250px;
-      }
+    .hero--section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+    }
+    .about--section--img {
+     display: flex;
+     justify-content: center;
+    }
+
+    .about--section--img > img{
+      padding: 0px;
+    }
       .contact--section {
         display: flex;
         padding: 40px 0px;
@@ -741,84 +874,6 @@ form {
       width:80%
     }
   
-  /* Hamburger menu  */
-  
-  .nav__hamburger {
-    display: none;
-    width: 1.875rem;
-    height: 1.313rem;
-    flex-direction: column;
-    justify-content: space-around;
-    position: absolute;
-    top: 25px;
-    right: 25px;
-  }
-  
-  .nav__hamburger__line {
-    display: block;
-    height: 0.188rem;
-    width: 100%;
-    background-color: #000000;
-    border-radius: 0.625rem;
-    transition: all ease-in-out 0.2s;
-  }
-  .navbar--items ul {
-    display:flex;
-    align-items: center;
-    margin: 0px 42.667px;
-  }
+ 
 }
-  @media screen and (max-width: 1023px) {
-    .nav__hamburger {
-      display: flex;
-      z-index: 200;
-    }
-    .navbar--items {
-      display: flex;
-    }
-    .navbar--items {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgba(255, 255, 255);
-      top: -20rem;
-      left: 0;
-      width: 100%;
-      transition: all ease-in-out 0.4s;
-    }
-    .navbar--items ul {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      padding: 3rem 0 0.6rem;
-      z-index: -100;
-     
-    }
-    .navbar--items ul li {
-      text-align: center;
-    }
-    .navbar--items ul li a {
-      padding: 0.5rem;
-    }
-    .navbar--items {
-      z-index: -1000;
-    }
-    .navbar--items.active {
-      top: 30px;
-    }
-    .nav__hamburger.active :nth-child(1) {
-      transform: rotate(45deg) translate(0.45rem, 0.1875rem);
-    }
-  
-    .nav__hamburger.active :nth-child(2) {
-      opacity: 0;
-    }
-  
-    .nav__hamburger.active :nth-child(3) {
-      transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
-    }
-    .content2 {
-      display: none;
-    }
-  }
+ 
